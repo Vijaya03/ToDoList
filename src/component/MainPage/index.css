@@ -1,0 +1,75 @@
+.main-content{
+    background: var(--backgroundColor);
+    min-width:100vw;
+    min-height:100vh;
+    transition:all 0.3s;
+}
+.cover{
+    background: var(--cover) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 250px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    gap:25%;
+    transition:all 0.3s;
+}
+.header{
+    color:var(--veryLightGray);
+    font-weight:500;
+    letter-spacing: 7px;
+    padding-top:50px;
+}
+.toggle{
+    display: flex;
+    padding-top:50px;
+    height:50px;
+    align-items: center
+}
+.toggle > img{
+    cursor: pointer;
+    padding-top:50px;
+    width:20px;
+}
+.card-section{
+    margin-top: -120px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.instruction{
+    display: flex;
+    justify-content: center;
+    color:var(--darkGrayishBlue);
+}
+.instruct{
+    margin-top: 20px;
+    font-size:14px
+}
+@media only screen and (max-width: 500px) {
+    .cover{
+        background:var(--mobieCover) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        gap:55%;
+        min-height: 220px;
+    }  
+    .header{
+        font-size:1.5em;
+    }
+    .card-section{
+        margin-top: -110px;
+       
+    }
+    .instruct{
+        margin-top: 90px;
+       
+    }
+}
