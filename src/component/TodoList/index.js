@@ -38,6 +38,9 @@ const TodoList = () =>{
         "&:hover + .cross": {
             opacity: 1
           },
+          "&:focus":{
+            outline:"5px solid white"
+          },
         ...draggableStyle
         });
 
@@ -84,7 +87,7 @@ const TodoList = () =>{
                                 provided.draggableProps.style
                             )}
                         >
-                            <label aria-label={item.id} className="container" >
+                            <label aria-label={item.id}  tabindex="0" className="container" >
                                 <input type="checkbox" id={item.id} defaultChecked={item.completed} onClick={()=>handleCheck(item.id,item.completed)   } />
                                 <span className="checkmark"></span>
                             </label> 

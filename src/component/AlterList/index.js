@@ -32,11 +32,11 @@ const AlterList = () =>{
              {lengthRemaining}&nbsp;items left
              </span>
             <div className="action">
-                <span className="all" onClick={handleAll} >All</span>
-                <span className="active" onClick={handleActive}>Active</span>
-                <span className="completed" onClick={handleComplete}>Completed</span>
+                <button className="all" tabindex="0" onClick={handleAll} >All</button>
+                <button className="active" tabindex="0" onClick={handleActive}>Active</button>
+                <button className="completed" tabindex="0" onClick={handleComplete}>Completed</button>
             </div>
-            <span className="clear_completed" onClick={handleClearCompleted}>Clear Completed</span>
+            <button className="clear_completed" tabindex="0" onClick={handleClearCompleted}>Clear Completed</button>
         </div>
     )
 }

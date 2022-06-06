@@ -27,25 +27,37 @@
 .left_items:hover{
     color:var(--textColor)
 }
-.all{
+button.all{
+    border:none;
+    background: transparent;
+    color:var(--veryDarkGrayishBlue1);
     grid-area:action;
 }
 .all:hover{
     color:var(--textColor)
 }
-.active{
+button.active{
     grid-area:action;
+    border:none;
+    background: transparent;
+    color:var(--veryDarkGrayishBlue1);
 }
 .active:hover{
     color:var(--textColor)
 }
-.completed{
+button.completed{
     grid-area:action;
+    border:none;
+    background: transparent;
+    color:var(--veryDarkGrayishBlue1);
 }
 .completed:hover{
     color:var(--textColor)
 }
-.clear_completed{
+button.clear_completed{
+    border:none;
+    background: transparent;
+    color:var(--veryDarkGrayishBlue1);
     grid-area:clear;
 }
 .clear_completed:hover{
@@ -55,6 +67,7 @@
     display:flex;
     justify-content: center;
     gap:10px;
+    
 }
 @media only screen and (max-width: 500px) {
     .footer{
