@@ -9,7 +9,7 @@ import AlterList from '../AlterList';
 const MainPage = () =>{
     const [toggleButton,setToggle] = useState(moon)
     const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const [theme, setTheme] = useLocalstorage('theme',defaultDark ? 'dark' : 'light');
+    const [theme, setTheme] = useLocalstorage('theme', defaultDark ? 'dark' : 'light');
     function setToggleFn(){
         const changed = theme === 'light' ? 'dark' : 'light';
         setTheme(changed);
