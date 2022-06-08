@@ -59,7 +59,7 @@ const todoData = createSlice({
         addTodoData(state,action){
             const newItem = action.payload;
             const existingItem = state.items.find((item)=> item.id === newItem.id);
-            if(!existingItem){
+            if(!existingItem && newItem.name!=""){
                 state.items.push({
                     id: newItem.id,
                     name: newItem.name,
